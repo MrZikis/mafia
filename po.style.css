@@ -5,6 +5,7 @@ body {
     font-family: "open sans";
 }
 
+/*---- Navigace ----*/
 header{
     display:flex;
     justify-content: space-between;
@@ -60,53 +61,70 @@ nav li a:hover{
     height: 100px;
 }
 
-p {
-    color: white;
-}
-  main{
+
+/* ---- Hlavní obsah ---- */
+
+main{
     padding: 15px;
-  }
+}
+
+/* -- Postavy -- */
+
+/*  Sekce  */
 section{
     color: black;
-    text-align: center;
-    display: inline-block;
-    margin-left: 5px ;
+    margin-left: 5px;
+    margin-right: 5px;
     width: 100%;
     height: auto;
-    margin-right: 5px;
-}
-p.postava{
-    color: black;
-    font-family: Pacifico ;
-}
-img.postava{
-    height: 300px;
-    width: 250px;
     display: flex;
-}
-div.postavy{
-    margin: 30px;
-    box-shadow: 1px 1px 5px #000000;
-    height: 450px;
-    width: 250px;
-    text-align: center;
+    flex-wrap: wrap;
     justify-content: center;
-    float:left;
-    background-color: white;
-    margin-right: 32px;
+    align-items: center;
 }
+
+/*  Nadpisy  */
 div.nadpis{
     font-family: Pacifico; 
     font-size: 200%;
     background-color: #9B1D20;
     color: aliceblue;
     text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Postavy - okénka */
+
+/* text */
+p.postava{
+    color: black;
+    font-family: Pacifico ;
+}
+
+
+/* obrázek*/
+img.postava{
+    height: 270px;
     width: 100%;
+    display: flex;
 }
-section.saliery{
-    background-color: azure;
+
+/* celé okno */
+div.postavy{
+    margin: 30px;
+    margin-right: 32px;
+    height: 450px;
+    width: 250px;
+    box-shadow: 1px 1px 5px #000000;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    /*float: left;*/
 }
-img.fotka{
+
+/* Family Salieri */
+img.fotka{ 
     width: 700px; 
     height: 450px;
     box-shadow: 1px 1px 10px #000000;
