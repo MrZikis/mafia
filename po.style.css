@@ -66,11 +66,14 @@ p {
   main{
     padding: 15px;
   }
-article{
+section{
     color: black;
     text-align: center;
     display: inline-block;
-    margin-left: 30px ;
+    margin-left: 5px ;
+    width: 100%;
+    height: auto;
+    margin-right: 5px;
 }
 p.postava{
     color: black;
@@ -88,13 +91,24 @@ div.postavy{
     width: 250px;
     text-align: center;
     justify-content: center;
-    float: left;
+    float:left;
     background-color: white;
-    margin-right: 20px;
+    margin-right: 32px;
 }
 div.nadpis{
     font-family: Pacifico; 
     font-size: 200%;
     background-color: #9B1D20;
     color: aliceblue;
+    text-align: center;
+    width: 100%;
+}
+section.saliery{
+    background-color: azure;
+}
+img.fotka{
+    width: 700px; 
+    height: 450px;
+    box-shadow: 1px 1px 10px #000000;
+    margin: 10px;
 }
