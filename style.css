@@ -1,11 +1,12 @@
 body {
     margin:0;
     padding:0;
-    background-color: rgb(255, 255, 255);
-    font-family: "open sans";
+    font-family: Bahnschrift SemiBold;
 }
 
+/* -- Navigace -- */
 header{
+    position: relative;
     display:flex;
     justify-content: space-between;
     color: rgb(95, 81, 81);
@@ -16,7 +17,7 @@ header div{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Pacifico;
+    font-family: Bahnschrift SemiBold;
     margin: 0 2rem;
 }
   
@@ -34,20 +35,27 @@ header img{
     width: 150px;
 }
   
-nav ul li{
+nav ul li {
     list-style: none;
     display: inline-block;
-    text-transform: none;
     font-weight: bold;
     letter-spacing: 5px;
+    text-align: right; 
 }
   
-nav li a{
+nav li a {
     padding: 1rem;
     margin: 1rem;
     text-decoration: none;
-    color: white;
+    color: black;
+    font-size: 1.5rem; 
     transition: all 250ms ease-in;
+}
+
+nav ul {
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
   
 nav li a:hover{
@@ -60,6 +68,190 @@ nav li a:hover{
     height: 100px;
 }
 
-p {
+
+/*-- Video na pozadí - Mafia --*/
+.video-container {
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 29.25%; /* Poměr stran 16:9 pro video */
+    overflow: hidden;
+}
+  
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.main_logo {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 14%;
+    position: absolute;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+
+/* Tlačítko Zakoupit */
+.zakoupit {
+    background-color: rgb(228, 60, 50);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 35px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 21%;
+    position: absolute;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+  
+.zakoupit:hover {
+    background-color: #cc0000;
+}
+
+
+/* --- Hlavní obsah --- */
+main {
+	padding: 50px;
+    /*background-color: rgb(161, 42, 42);*/
     color: white;
+    background-image: linear-gradient(to bottom, rgb(161, 42, 42), #000000);
+}
+
+
+
+/* Černá okénka */
+.okenka{
+    margin: 30px;
+    margin-right: 32px;
+    height: 300px;
+    width: 250px;
+    box-shadow: 1px 1px 5px #000000;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    font-family: Bahnschrift;
+    font-size: 35px;
+}
+
+.okenka_pravo {
+    margin: 30px;
+    margin-right: 100px;
+    height: 300px;
+    width: 250px;
+    box-shadow: 1px 1px 5px #000000;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    font-family: Bahnschrift;
+    font-size: 35px;
+}
+
+.kniha {
+    margin-top: 22px;
+}
+
+.panacek {
+    margin-top: 23px;
+}
+
+.okenka:hover {
+    transform: scale(1.1);
+    background-color: rgb(24, 24, 24);
+}
+
+.okenka_pravo:hover {
+    transform: scale(1.1);
+    background-color: rgb(24, 24, 24);
+}
+
+
+/* Texty o hře */
+p {
+    font-family: Bahnschrift;
+    font-size: 27px; 
+}
+
+li {
+    font-family: Bahnschrift;
+    font-size: 20px;     
+}
+
+.about {
+    margin-top: 39px;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+h2 {
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+ul {
+	list-style-type: disc;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.review {
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.review h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+/* -- Obrázky na závěř -- */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    width: 30%;
+    margin: 5px;
+    max-width: 300px; 
+    height: auto; 
+  }
+
+  .image-container img:hover {
+    transform: scale(1.5);
+  }
+
+/*-- Pata stránky --*/
+div.footer{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color:#000000;
+    font-size: 100%;
+    font-family: Bahnschrift SemiBold;
+    font-weight: 300;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

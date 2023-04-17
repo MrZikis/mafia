@@ -1,29 +1,102 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Mafia 1</title>
-</head>
-<body>
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Mafia 1</title>
+  </head>
+
+  <body>
+    <!-- Navigace -->
     <header>
-        <div id="logo">
+      <div id="logo">
           <i class="fas fa-atom"></i>
           <a href="stranka.html">
             <img src="Logo_Mafia.png" alt="Mafia logo" width="150px">
           </a>
-        </div>
-        <nav>
+      </div>
+
+      <nav>
           <ul>
             <li><a href="pribeh.html">Příběh</a></li>
             <li><a href="postavy.html">Postavy</a></li>
             <li><a href="#">Auta</a></li>
-            <li><a href="#">Kde hru koupit?</a></li>
+            <li><a href="#">Mapa Lost Heaven</a></li>
           </ul>
-        </nav>
-      </header>
-      <p>Neger ipsum dolor sit amet consectetur adipisicing elit. Quam maiores consectetur, laboriosam rerum obcaecati.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maiores consectetur, laboriosam rerum obcaecati.</p>
-</body>
+      </nav>
+    </header>
+     
+    <!-- Video na pozadí -->
+    <div class="video-container">
+      <video autoplay loop muted id="background-video">
+        <source src="MainStranka_obrazky/Trailer_video.mp4" type="video/mp4">
+        Vaše prohlížeč nepodporuje HTML5 video.
+      </video>
+      <img class="main_logo" src="MainStranka_obrazky/White_mafia_logo.png" alt="white mafia logo">
+      <a href="https://store.steampowered.com/app/40990/Mafia/" target="_blank" class="zakoupit">ZAKOUPIT</a>
+    </div>
+    
+    <main>
+        <!-- Černá přejížděcí okénka -->
+        <div class="okenka">
+          <img class="panacek" src="MainStranka_obrazky/panacek.png" alt="panacek">
+          <br>Pro jednoho hráče
+        </div>
+        <div class="okenka">
+          <img class="kniha" src="MainStranka_obrazky/ikona_adventura.png" alt="adventura">
+          <br>Akční příběhovka
+        </div>
+        <div class="okenka_pravo">
+          <img src="MainStranka_obrazky/mesto.png" alt="18">
+          <br>Jedinečné město Lost Heaven
+        </div>
+
+      <!-- O HŘE -->  
+      <section class="about">
+        <h2>O MAFII</h2>
+        <p>Mafia 1 je akční adventura z pohledu třetí osoby, která vyšla v roce 2002.
+           Děj hry se odehrává v fiktivním městě Lost Heaven, inspirovaném americkým Chicagem,
+           v 30. letech. Hlavním protagonistou hry je Tommy Angelo, řidič taxíku, který se stane členem mafie a musí se propracovat v hierarchii,
+           plnit různé úkoly a získávat respekt, aby postupoval v kriminálním světě. Hra je postavena na lineárním příběhu,
+           který se skládá z 20 kapitol, které posouvají děj hry dopředu. Během hraní se hráč dostává do různých situací,
+           jako je například loupež banky, pronásledování aut a střelba na nepřátele. Mafia 1 nabízí také otevřený svět,
+           ve kterém se hráč může volně pohybovat a plnit vedlejší mise. Hra je známá svou vysokou obtížností,
+           kdy stačí jen málo chyb a hráč je může přivést k nezdaru.</p>
+      </section>
+       
+      <!-- Seznam požadavků -->
+      <section class="pozadavky">
+        <h2>Systémové požadavky</h2>
+        <ul>
+          <li>Operační systém: Windows XP / Vista / 7 / 8 / 10</li>
+          <li>Procesor: 1,4 GHz nebo rychlejší</li>
+          <li>Paměť RAM: 2 GB</li>
+          <li>Grafická karta: kompatibilní s DirectX 9.0c a 256 MB RAM</li>
+          <li>Volné místo na disku: 3 GB</li>
+        </ul>
+      </section>
+      
+      <!-- Obrázky ze hry -->
+      <section class="obrazky">
+        <div class="image-container">
+          <img class="okno1" src="MainStranka_obrazky/obr1.jpg" alt="Obrázek 1 - v salonu Salieri">
+          <img class="okno2" src="MainStranka_obrazky/obr2.jpg" alt="Obrázek 2 - přestřelka">
+          <img class="okno3" src="MainStranka_obrazky/obr3.jpg" alt="Obrázek 3 - Tommy">
+          <img src="MainStranka_obrazky/pepe_restaurant.jpg" alt="pepe restaurace">
+          <img src="MainStranka_obrazky/benzinka.jpg" alt="benzinka">
+          <img src="MainStranka_obrazky/tommy_auto.jpg" alt="tommy_v_aute">
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Pata stránky -->
+    <footer>
+      <div class="footer">
+      Veškerá práva jsou vyhrazeny Jakubovi Zikmundovi, Samovi Simadlovi a Pavlu Němečkovi <br> © Copyright 2023
+      </div>
+    </footer>
+  </body>
 </html>
