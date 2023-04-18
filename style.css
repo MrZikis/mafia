@@ -84,7 +84,7 @@ nav li a:hover{
     transform: translate(-50%, -50%);
     width: auto;
     height: auto;
-    min-width: 100%;
+    min-width: 101%;
     min-height: 100%;
     z-index: -1;
 }
@@ -249,7 +249,7 @@ div.footer{
     height: auto;
     background-color:#000000;
     font-size: 100%;
-    font-family: Bahnschrift SemiBold;
+    font-family: Bahnschrift;
     font-weight: 300;
     color: white;
     padding-top: 10px;

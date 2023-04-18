@@ -1,7 +1,7 @@
 body {
     margin:0;
     padding:0;
-    font-family: Bahnschrift SemiBold;
+    font-family: Bahnschrift;
 }
 
 /* -- Navigace -- */
@@ -35,7 +35,7 @@ header img{
     width: 150px;
 }
   
-nav ul li {
+header nav ul li {
     list-style: none;
     display: inline-block;
     font-weight: bold;
@@ -43,7 +43,7 @@ nav ul li {
     text-align: right; 
 }
   
-nav li a {
+header nav li a {
     padding: 1rem;
     margin: 1rem;
     text-decoration: none;
@@ -52,13 +52,13 @@ nav li a {
     transition: all 250ms ease-in;
 }
 
-nav ul {
+header nav ul {
     margin-left: 0px;
     margin-top: 20px;
     margin-bottom: 0px;
 }
   
-nav li a:hover{
+header nav li a:hover{
     background: rgba(255,255,255,.3);
     color: black;
 }
@@ -67,7 +67,55 @@ nav li a:hover{
     width: 150px;
     height: 100px;
 }
-
-p {
-    color: white;
+/* -- Div, který je v navigaci -- */
+.square{
+    width: 300px;
+    height: 1200px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 10px black;
 }
+.rectangle{
+    width: 300px;
+    height: 30px;
+    background-color: #151515;
+}
+/* -- Navigace v mainu -- */
+main nav{
+    padding-top: 8px;
+    padding-left: 5px;
+}
+
+main nav ul li {
+    display: flex;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 15px;
+    justify-content: center;
+}
+
+main nav li a {
+    text-decoration:none;
+    color: black;
+    font-size: 1.5rem; 
+    transition: all 250ms ease-in;
+    text-align: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+main nav ul {
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+main nav li a:hover{
+    text-decoration: underline red;
+    color: black;
+}
+
+/*--To DO:
+Dodělat obsah a nějak to pozadí,
+dodělat target v a
+přidat někde obrázky, třeba loading screen při loadění mise
+--/

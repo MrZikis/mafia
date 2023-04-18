@@ -1,12 +1,12 @@
 body {
     margin:0;
     padding:0;
-    background-color: rgb(255, 255, 255);
-    font-family: Bahnschrift SemiBold;
+    font-family: Bahnschrift;
 }
 
-/*---- Navigace ----*/
+/* -- Navigace -- */
 header{
+    position: relative;
     display:flex;
     justify-content: space-between;
     color: rgb(95, 81, 81);
@@ -17,7 +17,7 @@ header div{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Bahnschrift SemiBold;
+    font-family: Bahnschrift Semibold;
     margin: 0 2rem;
 }
   
@@ -40,7 +40,7 @@ nav ul li {
     display: inline-block;
     font-weight: bold;
     letter-spacing: 5px;
-    text-align: right; /* zarovnání textu doprava */
+    text-align: right; 
 }
   
 nav li a {
@@ -48,7 +48,7 @@ nav li a {
     margin: 1rem;
     text-decoration: none;
     color: black;
-    font-size: 1.5rem; /* zvětšení textu */
+    font-size: 1.5rem; 
     transition: all 250ms ease-in;
 }
 
@@ -72,6 +72,7 @@ nav li a:hover{
 
 main{
     padding: 15px;
+    background-image: linear-gradient(to bottom ,#CDDDDD, #9DB4C0);
 }
 
 /* -- Postavy -- */
@@ -120,7 +121,7 @@ img.postava{
 div.postavy{
     margin: 30px;
     margin-right: 32px;
-    height: 450px;
+    height: 430px;
     width: 250px;
     box-shadow: 1px 1px 5px #000000;
     background-color: white;
@@ -137,7 +138,7 @@ div.footer{
     background-color: #000000;
     font-size: 100%;
     /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
-    font-family: Bahnschrift SemiBold;
+    font-family: Bahnschrift;
     font-weight: 300;
     padding-top: 10px;
     padding-bottom: 10px;
