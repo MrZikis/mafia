@@ -67,25 +67,26 @@ header nav li a:hover{
     width: 150px;
     height: 100px;
 }
-/* -- Div, který je v navigaci -- */
+/* -- Div, který je v aside -- */
 .square{
-    width: 300px;
-    height: 1200px;
+    width: 250px;
+    height: 925px;
     background-color: whitesmoke;
     box-shadow: 1px 1px 10px black;
+    
 }
 .rectangle{
-    width: 300px;
+    width: 250px;
     height: 30px;
     background-color: #151515;
 }
-/* -- Navigace v mainu -- */
-main nav{
-    padding-top: 8px;
-    padding-left: 5px;
-}
+/* -- Aside v mainu -- */
 
-main nav ul li {
+aside{
+    float: left;
+    margin-right: 20px;
+}
+aside ul li {
     display: flex;
     font-weight: bold;
     letter-spacing: 2px;
@@ -94,28 +95,66 @@ main nav ul li {
     justify-content: center;
 }
 
-main nav li a {
+aside li a {
     text-decoration:none;
     color: black;
-    font-size: 1.5rem; 
+    font-size: 1rem; 
     transition: all 250ms ease-in;
     text-align: center;
     justify-content: center;
     margin-right: 40px;
 }
 
-main nav ul {
+aside ul {
     margin-left: 0px;
     margin-top: 20px;
     margin-bottom: 0px;
 }
-main nav li a:hover{
-    text-decoration: underline red;
+aside li a:hover{
+    text-decoration: red underline;
     color: black;
 }
 
-/*--To DO:
-Dodělat obsah a nějak to pozadí,
-dodělat target v a
-přidat někde obrázky, třeba loading screen při loadění mise
---/
+/*--Nadpis--*/
+div.nadpis{
+    font-family: Bahnschrift; 
+    font-size: 150%;
+    background-color: #9B1D20;
+    color: aliceblue;
+    text-align: center;
+    height: 30px;
+}
+/*--Sekce--*/
+section{
+    margin-left: 25px;
+}
+
+/*--Obrázek--*/
+img.l_screen{
+    /*--Potřeba udělat--*/
+}
+
+/*--Písmo--*/
+p.section{
+    font-family: Bahnschrift;
+    font-size: 1rem;
+    margin: 0px;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-right: 25px;
+}
+/*--Pata stránky--*/
+div.footer{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    font-size: 100%;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: Bahnschrift;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
