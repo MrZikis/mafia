@@ -7,6 +7,8 @@
       <link rel="stylesheet" href="style.css">
       <title>Mafia 1</title>
       <link rel="icon" href="Logo_mafia1.png" type="image">
+      <!-- Lightbox CSS -->
+      <link rel="stylesheet" href="lightbox2/dist/css/lightbox.min.css" />
   </head>
 
   <body>
@@ -61,7 +63,7 @@
            Děj hry se odehrává v fiktivním městě Lost Heaven, inspirovaném americkým Chicagem,
            v 30. letech. Hlavním protagonistou hry je Tommy Angelo, řidič taxíku, který se stane členem mafie a musí se propracovat v hierarchii,
            plnit různé úkoly a získávat respekt, aby postupoval v kriminálním světě. Hra je postavena na lineárním příběhu,
-           který se skládá z 20 kapitol, které posouvají děj hry dopředu. Během hraní se hráč dostává do různých situací,
+           který se skládá z 20 kapitol, které posouvají děj hry dopředu.<br> <br>Během hraní se hráč dostává do různých situací,
            jako je například loupež banky, pronásledování aut a střelba na nepřátele. Mafia 1 nabízí také otevřený svět,
            ve kterém se hráč může volně pohybovat a plnit vedlejší mise. Hra je známá svou vysokou obtížností,
            kdy stačí jen málo chyb a hráč je může přivést k nezdaru.</p>
@@ -80,14 +82,28 @@
       </section>
       
       <!-- Obrázky ze hry -->
-      <section class="obrazky">
-        <div class="image-container">
-          <img class="okno1" src="MainStranka_obrazky/obr1.jpg" alt="Obrázek 1 - v salonu Salieri">
-          <img class="okno2" src="MainStranka_obrazky/obr2.jpg" alt="Obrázek 2 - přestřelka">
-          <img class="okno3" src="MainStranka_obrazky/obr3.jpg" alt="Obrázek 3 - Tommy">
-          <img src="MainStranka_obrazky/pepe_restaurant.jpg" alt="pepe restaurace">
-          <img src="MainStranka_obrazky/benzinka.jpg" alt="benzinka">
-          <img src="MainStranka_obrazky/tommy_auto.jpg" alt="tommy_v_aute">
+      <section>
+        <div class="image-content">
+         <a href="MainStranka_obrazky/obr1.jpg" data-lightbox="mafia">
+        <img src="MainStranka_obrazky/obr1.jpg" alt="Obrázek 1 - v salonu Salieri"></a> 
+          <a href="MainStranka_obrazky/obr2.png"data-lightbox="mafia">
+          <img src="MainStranka_obrazky/obr2.png" alt="Obrázek 2 - přestřelka"></a>
+          <a href="MainStranka_obrazky/obr3.jpg" data-lightbox="mafia">
+          <img src="MainStranka_obrazky/obr3.jpg" alt="Obrázek 3 - Tommy"></a>
+          <a href="MainStranka_obrazky/mafia-2.jpg" data-lightbox="mafia">
+          <img src="MainStranka_obrazky/mafia-2.jpg" alt="pepe restaurace"></a>
+          <a href="MainStranka_obrazky/benzinka.jpg" data-lightbox="mafia">
+          <img src="MainStranka_obrazky/benzinka.jpg" alt="benzinka"></a>
+          <a href="MainStranka_obrazky/tommy_auto.jpg" data-lightbox="mafia">
+          <img src="MainStranka_obrazky/tommy_auto.jpg" alt="tommy_v_aute"></a>
+          <a href="MainStranka_obrazky/island.JPG" data-lightbox="mafia">
+          <img src="MainStranka_obrazky/island.JPG" alt="tommy_v_aute"></a>
+          <a href="MainStranka_obrazky/centrum.jpg" data-lightbox="mafia">
+          <img src="MainStranka_obrazky/centrum.jpg" alt="tommy_v_aute"></a>
+          <a href="MainStranka_obrazky/schuze.jpg" data-lightbox="mafia">
+          <img src="MainStranka_obrazky/schuze.jpg" alt="tommy_v_aute"></a>
+          <a href="MainStranka_obrazky/Sam&Paulie.jpg" data-lightbox="mafia">
+          <img src="MainStranka_obrazky/Sam&Paulie.jpg" alt="tommy_v_aute"></a>
         </div>
       </section>
     </main>
@@ -97,5 +113,10 @@
       Veškerá práva jsou vyhrazeny Jakubovi Zikmundovi, Samovi Simadlovi a Pavlu Němečkovi <br> © Copyright 2023
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- Lightbox JS -->
+        <script src="lightbox2/dist/js/lightbox.min.js"></script>
+        <!-- Custom js -->
+        <script src="js/main.js"></script>
   </body>
 </html>

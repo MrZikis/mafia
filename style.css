@@ -223,24 +223,33 @@ ul {
 }
 
 /* -- Obrázky na závěř -- */
-.image-container {
-    display: flex;
+.image-content{
+    display: inline-block;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
   
-  .image-container img {
+  .image-content img{
+    width: 30%;
+    margin: 5px;
+    max-width: 335px; 
+    height: auto;
+    height: 30%;
+    max-height: 170px;
+  }
+
+  .image-content img:hover{
+    transform: scale(1.2);
+  }
+
+  .image-content a{
     width: 30%;
     margin: 5px;
     max-width: 300px; 
-    height: auto; 
+    height: 30%;
+    max-height: 50px;
   }
-
-  .image-container img:hover {
-    transform: scale(1.5);
-  }
-
 /*-- Pata stránky --*/
 div.footer{
     text-align: center;

@@ -70,7 +70,7 @@ header nav li a:hover{
 /* -- Div, který je v aside -- */
 .square{
     width: 250px;
-    height: 925px;
+    height: 2028px;
     background-color: whitesmoke;
     box-shadow: 1px 1px 10px black;
     
@@ -81,12 +81,12 @@ header nav li a:hover{
     background-color: #151515;
 }
 /* -- Aside v mainu -- */
-
-aside{
+.left{
     float: left;
     margin-right: 20px;
+    height: 100%;
 }
-aside ul li {
+.left ul li {
     display: flex;
     font-weight: bold;
     letter-spacing: 2px;
@@ -95,7 +95,7 @@ aside ul li {
     justify-content: center;
 }
 
-aside li a {
+.left li a {
     text-decoration:none;
     color: black;
     font-size: 1rem; 
@@ -105,16 +105,24 @@ aside li a {
     margin-right: 40px;
 }
 
-aside ul {
+.left ul {
     margin-left: 0px;
     margin-top: 20px;
     margin-bottom: 0px;
 }
-aside li a:hover{
+.left li a:hover{
     text-decoration: red underline;
     color: black;
 }
-
+/*--Div, který je napravo stránky--*/
+.right{
+    float: right;
+}
+.square2{
+    width: 150px;
+    height: 2028px;
+    background-color: rgba(0,0,0,0.2);
+}
 /*--Nadpis--*/
 div.nadpis{
     font-family: Bahnschrift; 
@@ -126,17 +134,19 @@ div.nadpis{
 }
 /*--Sekce--*/
 section{
-    margin-left: 25px;
+    margin-left: 250px;
+    margin-right: 150px
 }
 
 /*--Písmo--*/
 p.section{
-    font-family: Bahnschrift;
-    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     margin: 0px;
     letter-spacing: 1px;
     text-align: justify;
-    margin-right: 25px;
+    margin-right: 15px;
+    margin-bottom: 10px;
 }
 /*--Pata stránky--*/
 div.footer{
